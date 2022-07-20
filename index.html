@@ -97,7 +97,7 @@
         </div>
         <div class="row text-center">
           <div
-            class="col-md-4"
+            class="col-lg-4 p-3 g-3"
             data-aos="fade-up"
             data-aos-duration="500"
             data-aos-easing="ease-in-out"
@@ -116,7 +116,7 @@
           </div>
 
           <div
-            class="col-md-4"
+            class="col-lg-4 p-3 g-3"
             data-aos="fade-up"
             data-aos-duration="500"
             data-aos-easing="ease-in-out"
@@ -138,7 +138,7 @@
           </div>
 
           <div
-            class="col-md-4"
+            class="col-lg-4 p-3 g-3"
             data-aos="fade-up"
             data-aos-duration="500"
             data-aos-easing="ease-in-out"
@@ -163,13 +163,95 @@
     </section>
 
     <!-- Plans -->
+    <section class="page-section" id="plan">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Plans</h2>
+          <h3 class="section-subheading text-muted">
+            Here are some of our completed projects
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 g-3" data-aos="zoom-in">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Starter</h5>
+                <h2 class="card-text fw-bold">$299</h2>
+                <p><em>Simples package to get you started</em></p>
+                <p>1 Webpage</p>
+                <p>$10 a month</p>
+                <p>1 Design Concept</p>
+                <p>1 Email Account</p>
+                <p><strike>1 Personalized Logo</strike></p>
+                <p><strike>Web Hosting</strike></p>
+
+                <button
+                  class="buyBtn btn btn-outline-warning w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#buyModal"
+                  onclick="chooseStarter('Starter')"
+                >
+                  Buy Now!
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 g-3" data-aos="zoom-in">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Premium</h5>
+                <h2 class="card-text fw-bold">$599</h2>
+                <p><em>Simples package to get you started</em></p>
+                <p>3 Webpages</p>
+                <p>$12 a month</p>
+                <p>2 Design Concept</p>
+                <p>1 Email Account</p>
+                <p>1 Personalized Logo</p>
+                <p><strike>Web Hosting</strike></p>
+                <button
+                  class="buyBtn btn btn-warning w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#buyModal"
+                  onclick="chooseStarter('Premium')"
+                >
+                  Buy Now!
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 g-3" data-aos="zoom-in">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Business</h5>
+                <h2 class="card-text fw-bold">$799</h2>
+                <p><em>Simples package to get you started</em></p>
+                <p>5 Webpages</p>
+                <p>$15 a month</p>
+                <p>3 Design Concept</p>
+                <p>1 Email Account</p>
+                <p>1 Personalized Logo</p>
+                <p>Web Hosting</p>
+                <button
+                  class="buyBtn btn btn-outline-warning w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#buyModal"
+                  onclick="chooseStarter('Business')"
+                >
+                  Buy Now!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Testimonials starts here -->
     <section id="reviews" class="page-section">
       <div class="text-center">
-        <h2 class="section-heading text-uppercase">
-          Some of Our Satisfied Customers
-        </h2>
+        <span class="section-heading text-uppercase h2">
+          Some of Our <strong> Satisfied Customers</strong>
+        </span>
         <h3 class="section-subheading text-muted">
           Meet the individuals that would help you build the website you've been
           dreaming of!
@@ -183,9 +265,11 @@
         <div class="carousel-inner shadow">
           <div class="carousel-item active">
             <div class="row g-0 w-100">
-              <div class="col-md-5 mx-auto w-50">
-                <div class="card-body p-5">
-                  <h3 class="card-text mb-4 h6-sm">
+              <div class="col-md-5 mx-auto">
+                <div class="p-5">
+                  <h3
+                    class="card-text mb-4 fw-bold text-lg-center text-md-center text-center"
+                  >
                     "Always responsive. They go the extra mile to make sure
                     everything works. Highly satisfied with what they did with
                     my site at www.legalguide.ph and I would not hesitate
@@ -194,7 +278,7 @@
 
                   <div class="row">
                     <div
-                      class="col-lg-2 d-flex align-self-center justify-content-end"
+                      class="col-lg-5 col-md-5 col-5 d-flex align-self-center justify-content-lg-end justify-content-end"
                     >
                       <div class="">
                         <img
@@ -205,7 +289,9 @@
                         />
                       </div>
                     </div>
-                    <div class="col-lg-5 d-flex align-self-center">
+                    <div
+                      class="col-lg-7 col-md-7 col-7 d-flex align-self-center justify-content-lg-start justify-content-start"
+                    >
                       <div class="contents text-start">
                         <div class="row">
                           <p class="card-text text-primary">
@@ -229,73 +315,111 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="carousel-item">
+          <div class="carousel-item">
             <div class="row g-0 w-100">
-              <div class="col-md-7 d-flex align-self-center">
-                <div class="card-body p-5 text-end">
-                  <h3 class="card-text">
-                    <i class="fa-solid fa-quote-left"></i> This is a wider card
-                    with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-                    <i class="fa-solid fa-quote-right"></i>
+              <div class="col-md-5 mx-auto">
+                <div class="p-5">
+                  <h3
+                    class="card-text mb-4 fw-bold text-lg-center text-md-center text-center"
+                  >
+                    "Was referred to IPR from a friend who had recently done
+                    business and was very impressed. Went with Ivan to develop
+                    our brand logo for a new company, and was not disappointed.
+                    The pricing was very reasonable and the end product was
+                    awesome. Very satisifed!"
                   </h3>
-                  <p class="card-text">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <br />
-                    <img src="./images/woman.png" alt="" class="" width="45" />
-                    <small class="text-muted fst-italic">Juana Dela Cruz</small>
-                  </p>
+
+                  <div class="row">
+                    <div
+                      class="col-lg-5 col-md-5 col-5 d-flex align-self-center justify-content-lg-end justify-content-end"
+                    >
+                      <div class="">
+                        <img
+                          src="./assets/img/person2-reviews.jpg"
+                          alt=""
+                          class="rounded-circle"
+                          width="74"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="col-lg-7 col-md-7 col-7 d-flex align-self-center justify-content-lg-start justify-content-start"
+                    >
+                      <div class="contents text-start">
+                        <div class="row">
+                          <p class="card-text text-primary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </p>
+                        </div>
+                        <div class="row">
+                          <span class="h5 fw-bold">Jon Hart</span>
+                        </div>
+                        <div class="row">
+                          <small class="text-uppercase">maxautobid</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-1"></div>
-              <div class="col-md-4">
-                <img
-                  src="./images/bundle2.png"
-                  class="img-fluid border border-warning"
-                  alt="..."
-                />
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="row g-0 w-100">
-              <div class="col-md-7 d-flex align-self-center">
-                <div class="card-body p-5 text-end">
-                  <h3 class="card-text">
-                    <i class="fa-solid fa-quote-left"></i> This is a wider card
-                    with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-                    <i class="fa-solid fa-quote-right"></i>
+              <div class="col-md-5 mx-auto">
+                <div class="p-5">
+                  <h3
+                    class="card-text mb-4 fw-bold text-lg-center text-md-center text-center"
+                  >
+                    "Found them on Facebook and messaged them on their website.
+                    They were super quick on responding to our inquiries. Very
+                    professional and neat. They can still improve on project
+                    management but overall they are very easy to work with. :)"
                   </h3>
-                  <p class="card-text">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <br />
-                    <img src="./images/man.png" alt="" class="" width="45" />
-                    <small class="text-muted fst-italic"
-                      >Juanito Dela Cruz</small
+
+                  <div class="row">
+                    <div
+                      class="col-lg-5 col-md-5 col-5 d-flex align-self-center justify-content-lg-end justify-content-end"
                     >
-                  </p>
+                      <div class="">
+                        <img
+                          src="./assets/img/person3-reviews.jpg"
+                          alt=""
+                          class="rounded-circle"
+                          width="74"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="col-lg-7 col-md-7 col-7 d-flex align-self-center justify-content-lg-start justify-content-start"
+                    >
+                      <div class="contents text-start">
+                        <div class="row">
+                          <p class="card-text text-primary">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </p>
+                        </div>
+                        <div class="row">
+                          <span class="h5 fw-bold">Marian Ortiz</span>
+                        </div>
+                        <div class="row">
+                          <small class="text-uppercase">nest manila</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-1"></div>
-              <div class="col-md-4">
-                <img
-                  src="./images/bundle1.png"
-                  class="img-fluid border border-warning"
-                  alt="..."
-                />
-              </div>
             </div>
-          </div> -->
+          </div>
         </div>
         <button
           class="carousel-control-prev"
@@ -346,19 +470,23 @@
               <p class="text-muted">Website Developer</p>
               <a
                 class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Frenz Ivan Bernas Twitter Profile"
-                ><i class="fab fa-twitter"></i
+                href="https://frenzivan.github.io/PersonalPort/"
+                target="_blank"
+                aria-label="Frenz Ivan Bernas portfolio"
+                ><i class="fa-solid fa-folder-open"></i>
+              </a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="https://github.com/FrenzIvan"
+                target="_blank"
+                aria-label="Frenz Ivan Bernas guthub Profile"
+              >
+                <i class="fa-brands fa-github"></i
               ></a>
               <a
                 class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Frenz Ivan Bernas Facebook Profile"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
+                href="https://www.linkedin.com/in/frenz-ivan-bernas-135a4a80/"
+                target="_blank"
                 aria-label="Frenz Ivan Bernas LinkedIn Profile"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
@@ -381,19 +509,22 @@
               <p class="text-muted">Website Developer</p>
               <a
                 class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Patrick Jocson Twitter Profile"
-                ><i class="fab fa-twitter"></i
+                href="https://kcirtappat.github.io/Portfolio/"
+                target="_blank"
+                aria-label="Patrick Jocson portfolio"
+                ><i class="fa-solid fa-folder-open"></i>
+              </a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="https://github.com/kcirtappat"
+                aria-label="Patrick Jocson GitHub Profile"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
               ></a>
               <a
                 class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Patrick Jocson Facebook Profile"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
+                href="https://www.linkedin.com/in/patrick-jocson-173ba916a"
+                target="_blank"
                 aria-label="Patrick Jocson LinkedIn Profile"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
@@ -416,19 +547,22 @@
               <p class="text-muted">Website Developer</p>
               <a
                 class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Ryan Domincel Twitter Profile"
-                ><i class="fab fa-twitter"></i
+                href="https://ryandomincel.github.io/PersonalBlog/html/"
+                target="_blank"
+                aria-label="Ryan Domincel portfolio"
+                ><i class="fa-solid fa-folder-open"></i>
+              </a>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="https://github.com/RyanDomincel"
+                aria-label="Ryan Domincel GitHub Profile"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
               ></a>
               <a
                 class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Ryan Domincel Facebook Profile"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
+                href="https://www.linkedin.com/in/ryan-domincel-719385145/"
+                target="_blank"
                 aria-label="Ryan Domincel LinkedIn Profile"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
@@ -706,10 +840,18 @@
             ></a>
           </div>
           <div class="col-lg-4 text-lg-end">
-            <a class="link-dark text-decoration-none me-3" href="#!"
+            <a
+              class="link-dark text-decoration-none me-3"
+              href="https://newfold.com/privacy-center"
+              target="_blank"
               >Privacy Policy</a
             >
-            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+            <a
+              class="link-dark text-decoration-none"
+              href="https://www.palgrave.com/gp/services/legal/terms-of-use/6626236"
+              target="_blank"
+              >Terms of Use</a
+            >
           </div>
         </div>
       </div>
@@ -1071,8 +1213,372 @@
       </div>
     </div>
 
+    <!-- Modal for Plans -->
+    <!-- MODAL SECTION -->
+    <div class="modal fade" tabindex="-1" id="buyModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <form class="needs-validation" novalidate>
+            <div class="p-2 mb-2">
+              <input
+                type="button"
+                class="close border-0 float-end"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                aria-hidden="true"
+              >
+                <span class="fa-solid fa-xmark float-end"></span>
+            </input>
+            </div>
+            <div
+              class="brand-logo d-flex align-items-center justify-content-center mt-3"
+            >
+              <img
+                src="./assets/img/IPR Logo.png"
+                class="img-fluid"
+                width="125px"
+                alt=""
+              />
+            </div>
+
+            <!-- MODAL BODY TEXT GOES HERE -->
+            <div class="modal-body">
+              <h5 class="modal-title mb-3">Enter your billing info</h5>
+              <!-- <form class="needs-validation" novalidate> -->
+
+              <!-- STARTING OF ROW -->
+              <div class="row">
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <!-- MODAL BODY TEXT GOES HERE -->
+                  <!-- PACKAGE TYPE -->
+                  <label for="validationCustom06">Selected Package Type</label>
+                  <select
+                    class="form-select"
+                    name="package-type"
+                    id="packageType"
+                    aria-label="Filter select"
+                  >
+                    <option value="starter">Starter</option>
+                    <option value="premium">Premium</option>
+                    <option value="business">Business</option>
+                  </select>
+                </div>
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="validationCustom01">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom01"
+                    placeholder="First name"
+                    value=""
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Required</div>
+                </div>
+                <!-- END OF INPUT -->
+
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="validationCustom02">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    placeholder="Last name"
+                    value=""
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Required</div>
+                </div>
+                <!-- END OF INPUT -->
+
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="validationCustom03">Facebook Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom03"
+                    placeholder="Facebook name"
+                    required
+                  />
+                  <div class="invalid-feedback">Required</div>
+                </div>
+                <!-- END OF INPUT -->
+
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="validationCustom04">Company</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom04"
+                    placeholder="Company name"
+                    required
+                  />
+                  <div class="invalid-feedback">Required</div>
+                </div>
+                <!-- END OF INPUT -->
+
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="validationCustom05">Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom05"
+                    placeholder="Address"
+                    required
+                  />
+                  <div class="invalid-feedback">Required</div>
+                </div>
+                <!-- END OF INPUT -->
+
+                <!-- END OF INPUT -->
+              </div>
+              <!-- END OF ROW -->
+
+              <!-- STARTING OF ROW -->
+              <div class="row">
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="validationCustom07">Email Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom07"
+                    placeholder="Ex. juandelacruz@hotmail.com"
+                    required
+                  />
+                  <div class="invalid-feedback">Required</div>
+                </div>
+                <!-- End of email address -->
+
+                <div class="col-md-6 mb-3">
+                  <label class="mb-2" for="validationRadio08"
+                    >Payment Type</label
+                  ><br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      name="flexRadioDefault"
+                      type="radio"
+                      id="flexRadioDefault"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault"
+                      >Credit Card</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      name="flexRadioDefault"
+                      type="radio"
+                      id="flexRadioDefault"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2"
+                      >Paypal</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      name="flexRadioDefault"
+                      type="radio"
+                      id="flexRadioDefault"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault3"
+                      >Debit</label
+                    >
+                  </div>
+                </div>
+                <!-- End of Input RadioButtons -->
+
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="country">Country</label>
+                  <select class="form-select" id="country" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+                <!-- End of country -->
+
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="namecard">Name on Card</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="namecard"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">Required</div>
+                </div>
+                <!-- End of name card -->
+
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="city">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="City"
+                    required
+                  />
+                  <div class="invalid-feedback">Required</div>
+                </div>
+                <!-- End of city -->
+
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="validationCustom12">Card Number</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="validationCustom12"
+                    value="1234 5678 1234 5678"
+                    required
+                  />
+                  <div class="invalid-feedback">Required</div>
+                </div>
+                <!-- End of credit card number -->
+
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="state">State</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="state"
+                    placeholder="State"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid state
+                  </div>
+                </div>
+                <!-- End of State -->
+
+                <div class="col-md-4 col-sm-4 mb-3">
+                  <label for="cvv">Cvv</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="cvv"
+                    placeholder="CVV CODE"
+                    required
+                  />
+                  <div class="invalid-feedback">Required CVV Code</div>
+                </div>
+                <!-- End of Cvv -->
+
+                <div class="col-md-3 mb-3">
+                  <label for="zipcode">Zip</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipcode"
+                    placeholder="Zip"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <!-- End of Zip -->
+                <div class="col-md-4 offset-md-3 mb-3">
+                  <label for="date">Expiration Date</label>
+                  <input
+                    type="month"
+                    class="form-control"
+                    id="zipcode"
+                    placeholder="MM/YYYY"
+                    required
+                  />
+                </div>
+                <!-- End of Expiration Date -->
+
+                <div class="col-lg-12 col-md-12 p-3">
+                  <p>
+                    Auto Renewal Terms: Money-back guarantee applies to web
+                    services privacy. All plans and products automatically renew
+                    unless you cancel. Introductory prices apply to the first
+                    term. The renewal will be for the same term length and at
+                    the regular rates. You may cancel any time, prior to your
+                    renewal to prevent recurring charges, by logging into your
+                    online billing portal or calling customer support at (866)
+                    96-IPR.
+                  </p>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="invalidCheck"
+                        required
+                      />
+                      <label class="form-check-label" for="invalidCheck">
+                        You have read and agree to IPR's Auto Renewal Terms,
+                        <strong>Terms of Service</strong> and
+                        <strong>Cancellation Policy</strong> and acknowledge
+                        receipt of the <strong>Privacy Notice</strong>.
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Agree to terms and conditions -->
+              </div>
+              <!-- End of Row-->
+            </div>
+
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-warning">Confirm</button>
+              <button class="btn btn-dark" type="reset">Reset</button>
+            </div>
+          </form>
+          <!-- End of Form-->
+        </div>
+      </div>
+    </div>
+
     <!-- script.js -->
     <script src="./js/script.js"></script>
+    <script>
+      function chooseStarter(n) {
+        switch (n) {
+          case "Starter":
+            document.getElementById("packageType").value = "starter";
+            break;
+
+          case "Premium":
+            document.getElementById("packageType").value = "premium";
+
+            break;
+          default:
+            document.getElementById("packageType").value = "business";
+        }
+      }
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        window.addEventListener("load", function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = this.document.getElementsByClassName("needs-validation");
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener("submit", function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            });
+          });
+        });
+      })();
+    </script>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

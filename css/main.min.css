@@ -3269,14 +3269,14 @@ textarea.form-control-lg {
 
 .btn-dark {
     color: #fff;
-    background-color: #212529;
-    border-color: #212529
+    background-color: #ffc800;
+    border-color: #ffc800
 }
 
 .btn-dark:hover {
     color: #fff;
-    background-color: #1c1f23;
-    border-color: #1a1e21
+    background-color: #d6a903;
+    border-color: #d6a903
 }
 
 .btn-check:focus+.btn-dark, .btn-dark:focus {
@@ -11679,6 +11679,13 @@ textarea.form-control-lg {
 
 /*# sourceMappingURL=main.min.css.map */
 
+/*------------------------- Personalized CSS starts here---------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-padding-top: 4.5rem;
 }
@@ -12058,4 +12065,9 @@ section#contact form#contactForm :-ms-input-placeholder {
     text-align: center;
     font-size: 0.9rem;
     font-family: 'Poppins', sans-serif;
+}
+
+/* Plans */
+.buyBtn {
+    font-size: 20px;
 }
