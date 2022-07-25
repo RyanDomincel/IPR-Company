@@ -11884,7 +11884,7 @@ header.masthead .masthead-heading {
 .team-member img {
     width: 240px;
     height: 240px;
-    border: 8px solid #ffc800;
+    border: 8px solid #979190;
 }
 
 .team-member h4, .team-member .h4 {
@@ -12130,6 +12130,20 @@ section#contact form#contactForm :-ms-input-placeholder {
     color: #171515;
     background: none !important;
     border: 2px solid #171515 !important;
+    transform: translateY(-4px);
+}
+
+.icon-color-grey {
+    color: #fff;
+    background-color: #979190;
+    border-color: #979190;
+    transition: 0.4s;
+}
+
+.icon-color-grey:hover {
+    color: #979190;
+    background: none !important;
+    border: 2px solid #979190 !important;
     transform: translateY(-4px);
 }
 

@@ -40,21 +40,30 @@ function chooseStarter(n) {
   window.addEventListener("load", function () {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = this.document.getElementsByClassName("needs-validation");
-    var buttonToModal2 = this.document.getElementById("buttonToModal2");
+    var buttonToModal2 = this.document.getElementById("buttoNToModal2");
     // Loop over them and prevent submission
     var validation = Array.prototype.filter.call(forms, function (form) {
       form.addEventListener("submit", function (event) {
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
+          form.classList.add("was-validated");
+        } else {
+          event.preventDefault();
+          event.stopPropagation();
+          buttonToModal2.setAttribute("data-bs-toggle", "modal");
+          buttonToModal2.setAttribute("data-bs-target", "#modal2");
         }
-        buttonToModal2.setAttribute("data-bs-toggle", "modal");
-        buttonToModal2.setAttribute("data-bs-target", "#modal2");
-        form.classList.add("was-validated");
       });
     });
   });
 })();
+
+function removeDataBs() {
+  var buttonToModal2 = this.document.getElementById("buttoNToModal2");
+  buttonToModal2.removeAttribute("data-bs-toggle");
+  buttonToModal2.removeAttribute("data-bs-target");
+}
 
 // For Modal Country portion
 var stateObject = {
