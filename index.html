@@ -1348,9 +1348,9 @@
                     id="packageType"
                     aria-label="Filter select"
                   >
-                    <option value="starter">Starter</option>
-                    <option value="premium">Premium</option>
-                    <option value="business">Business</option>
+                    <option value="Starter">Starter</option>
+                    <option value="Premium">Premium</option>
+                    <option value="Business">Business</option>
                   </select>
                 </div>
                 <!-- Package Type -->
@@ -1504,6 +1504,7 @@
                       name="flexRadioDefault"
                       type="radio"
                       id="flexRadioDefault1"
+                      onclick="displayChosenMethod('Credit Card')"
                     />
                     <label class="form-check-label" for="flexRadioDefault"
                       >Credit Card</label
@@ -1515,6 +1516,7 @@
                       name="flexRadioDefault"
                       type="radio"
                       id="flexRadioDefault2"
+                      onclick="displayChosenMethod('Paypal')"
                     />
                     <label class="form-check-label" for="flexRadioDefault2"
                       >Paypal</label
@@ -1526,9 +1528,10 @@
                       name="flexRadioDefault"
                       type="radio"
                       id="flexRadioDefault3"
+                      onclick="displayChosenMethod('Debit Card')"
                     />
                     <label class="form-check-label" for="flexRadioDefault3"
-                      >Debit</label
+                      >Debit Card</label
                     >
                   </div>
                   <div class="invalid-feedback">Required</div>
@@ -1579,7 +1582,7 @@
                   <input
                     type="month"
                     class="form-control"
-                    id="zipcode"
+                    id="date-expiration"
                     placeholder="MM/YYYY"
                     required
                   />
@@ -1654,85 +1657,81 @@
               <div class="row first">
                 <div class="col-4">
                   <h6 class="label">Selected Package:</h6>
-                  <p class="text-break package-modal-2">Premium Unleaded</p>
+                  <p class="text-break " id="package-modal-2"></p>
                 </div>
                 <div class="col-4">
                   <h6 class="label">Full Name:</h6>
-                  <p class="text-break fullname-modal-2">
-                    firstname + " " lastname
-                  </p>
+                  <p class="text-break " id="fullname-modal-2"></p>
                 </div>
                 <div class="col-4">
                   <h6 class="label">Facebook Name:</h6>
-                  <p class="text-break fbname-modal-2">Juan DelaCruz</p>
+                  <p class="text-break " id="fbname-modal-2"></p>
                 </div>
               </div>
 
               <div class="row two">
-                <div class="col-4">
-                  <h6 class="label">Address:</h6>
-                  <p class="text-break address-modal-2">Juan Dela Cruz</p>
-                </div>
-                <div class="col-4">
+                <div class="col-6">
                   <h6 class="label">Email Address:</h6>
-                  <p class="text-break email-modal-2">
-                    juan.delacurz@hotmail.com
-                  </p>
+                  <p class="text-break " id="email-modal-2"></p>
                 </div>
-                <div class="col-4">
+                <div class="col-6">
                   <h6 class="label">Company:</h6>
-                  <p class="text-break company-modal-2">IPR Incorporated</p>
+                  <p class="text-break " id="company-modal-2"></p>
                 </div>
               </div>
-
-              <div class="row three">
+              <div class="row">
+                <div class="col-12">
+                  <h6 class="label">Address:</h6>
+                  <p class="text-break " id="address-modal-2"></p>
+                </div>
+              </div>
+              <hr />
+              <!-- <div class="row three">
                 <div class="col-4">
                   <h6 class="label">Country</h6>
-                  <p class="text-break country-modal-2">Philippines</p>
+                  <p class="text-break country-modal-2"></p>
                 </div>
                 <div class="col-4">
                   <h6 class="label">City:</h6>
-                  <p class="text-break city-modal-2">Manila</p>
+                  <p class="text-break city-modal-2"></p>
                 </div>
                 <div class="col-4">
                   <h6 class="label">State:</h6>
-                  <p class="text-break state-modal-2">Malanday</p>
+                  <p class="text-break state-modal-2"></p>
                 </div>
-              </div>
+              </div> -->
 
               <div class="row four">
                 <div class="col-4">
-                  <h6 class="label">Zip Code</h6>
-                  <p class="text-break zipcode-modal-2">9000</p>
-                </div>
-                <div class="col-4">
                   <h6 class="label">Payment Type:</h6>
-                  <p class="text-break payment-modal-2">Credit Card</p>
+                  <p class="text-break " id="payment-modal-2""></p>
                 </div>
                 <div class="col-4">
                   <h6 class="label">Name on Card</h6>
-                  <p class="text-break namecard-modal-2">Example name card</p>
+                  <p class="text-break " id="namecard-modal-2"></p>
                 </div>
               </div>
 
               <div class="row six">
                 <div class="col-4">
                   <h6 class="label">Card Number</h6>
-                  <p class="text-break cardnum-modal-2">**** **** *321</p>
+                  <p class="text-break " id="cardnum-modal-2"></p>
                 </div>
                 <div class="col-4">
                   <h6 class="label">Cvv</h6>
-                  <p class="cvv-modal-2">****</p>
+                  <p id="cvv-modal-2"></p>
                 </div>
                 <div class="col-4">
                   <h6 class="label">Expiration Date</h6>
-                  <p class="text-break expdate-modal-2">March 2190</p>
+                  <p class="text-break " id="expdate-modal-2"></p>
                 </div>
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-warning">OK</button>
+            <a href="thankyoutext.html"
+              ><button type="button" class="btn btn-warning">OK</button></a
+            >
             <button
               type="button"
               class="btn btn-secondary"
