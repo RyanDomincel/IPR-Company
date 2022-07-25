@@ -23,9 +23,8 @@
       href="https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Poppins:wght@200&display=swap"
       rel="stylesheet"
     />
-
     <!-- aos -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="./css/aos.css" rel="stylesheet" />
 
     <title>IT Solutions Company</title>
   </head>
@@ -90,7 +89,7 @@
     <section class="page-section" id="services">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">Services</h2>
+          <h2 class="section-heading text-uppercase fw-bold">Services</h2>
           <h3 class="section-subheading text-muted">
             We offer the best quality services you can find on the internet!
           </h3>
@@ -104,11 +103,10 @@
             data-aos-offset="250"
             data-aos-delay="0"
           >
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa-solid fa-file-code fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">Custom Website Creation</h4>
+            <div class="rounds mx-auto">
+              <i class="fax fa-solid fa-file-code mx-auto"></i>
+            </div>
+            <h4 class="my-3 fw-bold">Custom Website Creation</h4>
             <p class="text-muted">
               We create custom website for clients that need a specifically
               tailored solution for an app or web-based system.
@@ -123,12 +121,10 @@
             data-aos-offset="250"
             data-aos-delay="200"
           >
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa-solid fa-stack-1x fa-compass-drafting fa-inverse">
-              </i>
-            </span>
-            <h4 class="my-3">Graphic Design</h4>
+            <div class="rounds mx-auto">
+              <i class="fax fa-solid fa-compass-drafting mx-auto"></i>
+            </div>
+            <h4 class="my-3 fw-bold">Graphic Design</h4>
             <p class="text-muted">
               What does your logo say about your business? It’s important that
               it’s saying the right thing, as it’s often the first and only
@@ -145,11 +141,10 @@
             data-aos-offset="250"
             data-aos-delay="400"
           >
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa-solid fa-basket-shopping fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">E-Commerce Website</h4>
+            <div class="rounds mx-auto">
+              <i class="fax fa-solid fa-basket-shopping mx-auto"></i>
+            </div>
+            <h4 class="my-3 fw-bold">E-Commerce Website</h4>
             <p class="text-muted">
               We can help you design and develop end-to-end e-commerce solutions
               to streamline communication, automate workflow, manage high volume
@@ -162,17 +157,25 @@
       </div>
     </section>
 
+    <hr />
+
     <!-- Plans -->
     <section class="page-section" id="plan">
       <div class="container">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Plans</h2>
           <h3 class="section-subheading text-muted">
-            Here are some of our completed projects
+            Checkout our best plans to offer for you!
           </h3>
         </div>
         <div class="row">
-          <div class="col-lg-4 g-3" data-aos="zoom-in">
+          <div
+            class="col-lg-4 g-3"
+            data-aos="fade-down-left"
+            data-aos-offset="250"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
             <div class="card">
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Starter</h5>
@@ -196,7 +199,13 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 g-3" data-aos="zoom-in">
+          <div
+            class="col-lg-4 g-3"
+            data-aos="fade-down"
+            data-aos-offset="250"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
             <div class="card">
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Premium</h5>
@@ -219,7 +228,13 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 g-3" data-aos="zoom-in">
+          <div
+            class="col-lg-4 g-3"
+            data-aos="fade-down-right"
+            data-aos-offset="250"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
             <div class="card">
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Business</h5>
@@ -446,7 +461,9 @@
     <section class="page-section bg-light" id="team">
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Developers</h2>
+          <h2 class="section-heading text-uppercase fw-bold">
+            Our Amazing Developers
+          </h2>
           <h3 class="section-subheading text-muted">
             Meet the individuals that would help you build the website you've
             been dreaming of!
@@ -462,21 +479,21 @@
           >
             <div class="team-member">
               <img
-                class="mx-auto rounded-circle"
+                class="mx-auto rounded-circle border-color-main"
                 src="assets/img/Ivan-pic-team.png"
                 alt="..."
               />
-              <h4>Frenz Ivan Bernas</h4>
+              <h4 class="fw-bold">Frenz Ivan Bernas</h4>
               <p class="text-muted">Website Developer</p>
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btn btn-dark btn-social mx-2 icon-color-fb"
                 href="https://frenzivan.github.io/PersonalPort/"
                 target="_blank"
                 aria-label="Frenz Ivan Bernas portfolio"
                 ><i class="fa-solid fa-folder-open"></i>
               </a>
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btn btn-dark btn-social mx-2 icon-color-git"
                 href="https://github.com/FrenzIvan"
                 target="_blank"
                 aria-label="Frenz Ivan Bernas guthub Profile"
@@ -484,7 +501,7 @@
                 <i class="fa-brands fa-github"></i
               ></a>
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btn btn-dark btn-social mx-2 icon-color-li"
                 href="https://www.linkedin.com/in/frenz-ivan-bernas-135a4a80/"
                 target="_blank"
                 aria-label="Frenz Ivan Bernas LinkedIn Profile"
@@ -501,28 +518,28 @@
           >
             <div class="team-member">
               <img
-                class="mx-auto rounded-circle"
+                class="mx-auto rounded-circle border-color-main"
                 src="assets/img/patrick-pic-team.png"
                 alt="..."
               />
-              <h4>Patrick Jocson</h4>
+              <h4 class="fw-bold">Patrick Jocson</h4>
               <p class="text-muted">Website Developer</p>
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btn btn-dark btn-social mx-2 icon-color-fb"
                 href="https://kcirtappat.github.io/Portfolio/"
                 target="_blank"
                 aria-label="Patrick Jocson portfolio"
                 ><i class="fa-solid fa-folder-open"></i>
               </a>
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btn btn-dark btn-social mx-2 icon-color-git"
                 href="https://github.com/kcirtappat"
                 aria-label="Patrick Jocson GitHub Profile"
                 target="_blank"
                 ><i class="fa-brands fa-github"></i
               ></a>
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btn btn-dark btn-social mx-2 icon-color-li"
                 href="https://www.linkedin.com/in/patrick-jocson-173ba916a"
                 target="_blank"
                 aria-label="Patrick Jocson LinkedIn Profile"
@@ -539,28 +556,28 @@
           >
             <div class="team-member">
               <img
-                class="mx-auto rounded-circle"
+                class="mx-auto rounded-circle border-color-main"
                 src="assets/img/ryan-pic-team.png"
                 alt="..."
               />
-              <h4>Ryan Domincel</h4>
+              <h4 class="fw-bold">Ryan Domincel</h4>
               <p class="text-muted">Website Developer</p>
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btn btn-dark btn-social mx-2 icon-color-fb"
                 href="https://ryandomincel.github.io/PersonalBlog/html/"
                 target="_blank"
                 aria-label="Ryan Domincel portfolio"
                 ><i class="fa-solid fa-folder-open"></i>
               </a>
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btn btn-dark btn-social mx-2 icon-color-git"
                 href="https://github.com/RyanDomincel"
                 aria-label="Ryan Domincel GitHub Profile"
                 target="_blank"
                 ><i class="fa-brands fa-github"></i
               ></a>
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btn btn-dark btn-social mx-2 icon-color-li"
                 href="https://www.linkedin.com/in/ryan-domincel-719385145/"
                 target="_blank"
                 aria-label="Ryan Domincel LinkedIn Profile"
@@ -582,7 +599,15 @@
           </h3>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-sm-6 mb-4">
+          <!-- 1 -->
+          <div
+            class="col-lg-4 col-sm-6 mb-4"
+            data-aos="fade-up-left"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="250"
+            data-aos-delay="0"
+          >
             <!-- project item 1-->
             <div class="project-item">
               <a
@@ -595,21 +620,31 @@
                     <i class="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/project/1.jpg"
-                  alt="..."
-                />
+                <div class="text-center fixed-box d-flex align-items-center">
+                  <img
+                    class="img-fluid"
+                    src="assets/img/project/1.png"
+                    alt="..."
+                  />
+                </div>
               </a>
               <div class="project-caption">
-                <div class="project-caption-heading">Threads</div>
+                <div class="project-caption-heading">FoodHub</div>
                 <div class="project-caption-subheading text-muted">
-                  Illustration
+                  Recipe Website
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
+          <!-- 2 -->
+          <div
+            class="col-lg-4 col-sm-6 mb-4"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="250"
+            data-aos-delay="300"
+          >
             <!-- project item 2-->
             <div class="project-item">
               <a
@@ -622,21 +657,32 @@
                     <i class="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/project/2.jpg"
-                  alt="..."
-                />
+                <div class="text-center">
+                  <img
+                    class="img-fluid"
+                    src="assets/img/project/2.png"
+                    alt="..."
+                    width="267"
+                  />
+                </div>
               </a>
               <div class="project-caption">
-                <div class="project-caption-heading">Explore</div>
+                <div class="project-caption-heading">Supreme Clothing</div>
                 <div class="project-caption-subheading text-muted">
-                  Graphic Design
+                  E-Commerce Website
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
+          <!-- 3 -->
+          <div
+            class="col-lg-4 col-sm-6 mb-4"
+            data-aos="fade-up-right"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="250"
+            data-aos-delay="600"
+          >
             <!-- project item 3-->
             <div class="project-item">
               <a
@@ -649,21 +695,31 @@
                     <i class="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/project/3.jpg"
-                  alt="..."
-                />
+                <div class="text-center">
+                  <img
+                    class="image-fluid"
+                    src="assets/img/project/3.png"
+                    alt="..."
+                  />
+                </div>
               </a>
               <div class="project-caption">
-                <div class="project-caption-heading">Finish</div>
+                <div class="project-caption-heading">Burger Queen</div>
                 <div class="project-caption-subheading text-muted">
-                  Identity
+                  Fast Food Website
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+          <!-- 4 -->
+          <div
+            class="col-lg-4 col-sm-6 mb-4 mb-lg-0"
+            data-aos="fade-down-left"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="250"
+            data-aos-delay="0"
+          >
             <!-- project item 4-->
             <div class="project-item">
               <a
@@ -676,21 +732,32 @@
                     <i class="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/project/4.jpg"
-                  alt="..."
-                />
+                <div class="text-center fixed-box d-flex align-items-center">
+                  <img
+                    class="img-fluid"
+                    src="assets/img/project/4.png"
+                    alt="..."
+                    height="267"
+                  />
+                </div>
               </a>
               <div class="project-caption">
-                <div class="project-caption-heading">Lines</div>
+                <div class="project-caption-heading">Online Library</div>
                 <div class="project-caption-subheading text-muted">
-                  Branding
+                  Bootstrap-Enhanced Website
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+          <!-- 5 -->
+          <div
+            class="col-lg-4 col-sm-6 mb-4 mb-sm-0"
+            data-aos="fade-down"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="250"
+            data-aos-delay="300"
+          >
             <!-- project item 5-->
             <div class="project-item">
               <a
@@ -703,21 +770,32 @@
                     <i class="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/project/5.jpg"
-                  alt="..."
-                />
+                <div class="text-center fixed-box d-flex align-items-center">
+                  <img
+                    class="img-fluid"
+                    src="assets/img/project/5.png"
+                    alt="..."
+                    height="267"
+                  />
+                </div>
               </a>
               <div class="project-caption">
-                <div class="project-caption-heading">Southwest</div>
+                <div class="project-caption-heading">Blog Site</div>
                 <div class="project-caption-subheading text-muted">
-                  Website Design
+                  Personal Blog Website
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
+          <!-- 6 -->
+          <div
+            class="col-lg-4 col-sm-6"
+            data-aos="fade-down-right"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="250"
+            data-aos-delay="900"
+          >
             <!-- project item 6-->
             <div class="project-item">
               <a
@@ -730,11 +808,14 @@
                     <i class="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/project/6.jpg"
-                  alt="..."
-                />
+                <div class="text-center fixed-box d-flex align-items-center">
+                  <img
+                    class="img-fluid"
+                    src="assets/img/project/6.png"
+                    alt="..."
+                    height="267"
+                  />
+                </div>
               </a>
               <div class="project-caption">
                 <div class="project-caption-heading">Window</div>
@@ -758,34 +839,41 @@
             <strong>0955 123 4567</strong>
           </h3>
         </div>
-        <form id="contactForm">
+        <form
+          id="contactForm"
+          onsubmit="sendEmail();reset();return false;"
+          class="needs-validation"
+        >
           <div class="row align-items-stretch mb-5">
             <div class="col-md-6">
               <div class="form-group">
                 <!-- Name input-->
                 <input
                   class="form-control"
-                  id="name"
+                  id="name-contact-us"
                   type="text"
-                  placeholder="Your Name *"
+                  placeholder="Name"
+                  required
                 />
               </div>
               <div class="form-group">
                 <!-- Email address input-->
                 <input
                   class="form-control"
-                  id="email"
+                  id="email-contact-us"
                   type="email"
-                  placeholder="Your Email *"
+                  placeholder="Email"
+                  required
                 />
               </div>
               <div class="form-group mb-md-0">
                 <!-- Phone number input-->
                 <input
                   class="form-control"
-                  id="phone"
+                  id="phone-contact-us"
                   type="tel"
-                  placeholder="Your Phone *"
+                  placeholder="Phone"
+                  required
                 />
               </div>
             </div>
@@ -794,8 +882,9 @@
                 <!-- Message input-->
                 <textarea
                   class="form-control"
-                  id="message"
-                  placeholder="Your Message *"
+                  id="message-contact-us"
+                  placeholder="Message"
+                  required
                 ></textarea>
               </div>
             </div>
@@ -803,7 +892,7 @@
           <!-- Submit Button-->
           <div class="text-center">
             <button
-              class="btn btn-primary btn-xl text-uppercase"
+              class="btn btn-primary btn-xl text-uppercase border-2 border"
               id="submitButton"
               type="submit"
             >
@@ -821,19 +910,19 @@
           <div class="col-lg-4 text-lg-start">Copyright &copy; IPR 2022</div>
           <div class="col-lg-4 my-3 my-lg-0">
             <a
-              class="btn btn-dark btn-social mx-2"
+              class="btn btn-dark btn-social mx-2 icon-color-tw"
               href="#!"
               aria-label="Twitter"
               ><i class="fab fa-twitter"></i
             ></a>
             <a
-              class="btn btn-dark btn-social mx-2"
+              class="btn btn-dark btn-social mx-2 icon-color-fb"
               href="#!"
               aria-label="Facebook"
               ><i class="fab fa-facebook-f"></i
             ></a>
             <a
-              class="btn btn-dark btn-social mx-2"
+              class="btn btn-dark btn-social mx-2 icon-color-li"
               href="#!"
               aria-label="LinkedIn"
               ><i class="fab fa-linkedin-in"></i
@@ -869,47 +958,48 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
+            <i class="fa-solid fa-circle-xmark fs-1"></i>
           </div>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
                   <img
                     class="img-fluid d-block mx-auto"
-                    src="assets/img/project/1.jpg"
+                    src="assets/img/project/1.png"
                     alt="..."
                   />
                   <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                    FoodHub was established this year 2022 nad was a successful
+                    recipe website gaining over a million followers for its
+                    everyday updates of new recipes! <br /><br />
+                    Built through purely HTML and CSS
                   </p>
                   <ul class="list-inline">
                     <li>
                       <strong>Client:</strong>
-                      Threads
+                      John H. Doe
                     </li>
                     <li>
                       <strong>Category:</strong>
-                      Illustration
+                      Website Development
                     </li>
                   </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
+                  <a
+                    href="https://jdlibatique.github.io/Food-Hub/"
+                    target="_blank"
                   >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
+                    <button
+                      class="btn btn-primary btn-xl text-uppercase"
+                      data-bs-dismiss="modal"
+                      type="button"
+                    >
+                      Preview Project
+                      <i class="fa-solid fa-up-right-and-down-left-from-center">
+                      </i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -917,6 +1007,7 @@
         </div>
       </div>
     </div>
+
     <!-- project item 2 modal popup-->
     <div
       class="project-modal modal fade"
@@ -928,47 +1019,49 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
+            <i class="fa-solid fa-circle-xmark fs-1"></i>
           </div>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
                   <img
                     class="img-fluid d-block mx-auto"
-                    src="assets/img/project/2.jpg"
+                    src="assets/img/project/2.png"
                     alt="..."
                   />
                   <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                    Supreme Clothing online shopping mini project that sell
+                    products including shoes, fashion apparel, bags, belts and
+                    accessories.
+                    <br /><br />
+                    Built through purely HTML and CSS
                   </p>
                   <ul class="list-inline">
                     <li>
                       <strong>Client:</strong>
-                      Explore
+                      John H. Doe
                     </li>
                     <li>
                       <strong>Category:</strong>
-                      Graphic Design
+                      Website Development
                     </li>
                   </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
+                  <a
+                    href="https://kcirtappat.github.io/Mini-Project/"
+                    target="_blank"
                   >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
+                    <button
+                      class="btn btn-primary btn-xl text-uppercase"
+                      data-bs-dismiss="modal"
+                      type="button"
+                    >
+                      Preview Project
+                      <i class="fa-solid fa-up-right-and-down-left-from-center">
+                      </i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -976,6 +1069,7 @@
         </div>
       </div>
     </div>
+
     <!-- project item 3 modal popup-->
     <div
       class="project-modal modal fade"
@@ -987,47 +1081,48 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
+            <i class="fa-solid fa-circle-xmark fs-1"></i>
           </div>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
                   <img
                     class="img-fluid d-block mx-auto"
-                    src="assets/img/project/3.jpg"
+                    src="assets/img/project/3.png"
                     alt="..."
                   />
                   <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                    BurgerQueen was established this year 2022 nad was a
+                    successful fastfood website gaining over a million followers
+                    for its everyday updates of new combo meals! <br /><br />
+                    Built through purely HTML and CSS
                   </p>
                   <ul class="list-inline">
                     <li>
                       <strong>Client:</strong>
-                      Finish
+                      John H. Doe
                     </li>
                     <li>
                       <strong>Category:</strong>
-                      Identity
+                      Website Development
                     </li>
                   </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
+                  <a
+                    href="https://ryandomincel.github.io/BurgerQueen/"
+                    target="_blank"
                   >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
+                    <button
+                      class="btn btn-primary btn-xl text-uppercase"
+                      data-bs-dismiss="modal"
+                      type="button"
+                    >
+                      Preview Project
+                      <i class="fa-solid fa-up-right-and-down-left-from-center">
+                      </i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1046,47 +1141,48 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
+            <i class="fa-solid fa-circle-xmark fs-1"></i>
           </div>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
                   <img
                     class="img-fluid d-block mx-auto"
-                    src="assets/img/project/4.jpg"
+                    src="assets/img/project/4.png"
                     alt="..."
                   />
                   <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                    Online Library was created this year 2022 nad was a
+                    successful digital library gaining over a million followers
+                    for its everyday updates of new books! <br /><br />
+                    Built through purely HTML and CSS and a wee bit of Bootstrap
                   </p>
                   <ul class="list-inline">
                     <li>
                       <strong>Client:</strong>
-                      Lines
+                      John H. Doe
                     </li>
                     <li>
                       <strong>Category:</strong>
-                      Branding
+                      Website Development
                     </li>
                   </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
+                  <a
+                    href="https://ryandomincel.github.io/BurgerQueen/"
+                    target="_blank"
                   >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
+                    <button
+                      class="btn btn-primary btn-xl text-uppercase"
+                      data-bs-dismiss="modal"
+                      type="button"
+                    >
+                      Preview Project
+                      <i class="fa-solid fa-up-right-and-down-left-from-center">
+                      </i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1105,47 +1201,46 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
+            <i class="fa-solid fa-circle-xmark fs-1"></i>
           </div>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
                   <img
                     class="img-fluid d-block mx-auto"
-                    src="assets/img/project/5.jpg"
+                    src="assets/img/project/5.png"
                     alt="..."
                   />
                   <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                    Simple Website made of HTML and CSS, Profile Info, hobbies,
+                    favorite game, and gallery content.
                   </p>
                   <ul class="list-inline">
                     <li>
                       <strong>Client:</strong>
-                      Southwest
+                      John H. Doe
                     </li>
                     <li>
                       <strong>Category:</strong>
-                      Website Design
+                      Website Development
                     </li>
                   </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
+                  <a
+                    href="https://ryandomincel.github.io/BurgerQueen/"
+                    target="_blank"
                   >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
+                    <button
+                      class="btn btn-primary btn-xl text-uppercase"
+                      data-bs-dismiss="modal"
+                      type="button"
+                    >
+                      Preview Project
+                      <i class="fa-solid fa-up-right-and-down-left-from-center">
+                      </i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1164,47 +1259,48 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
+            <i class="fa-solid fa-circle-xmark fs-1"></i>
           </div>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="modal-body">
                   <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
                   <img
                     class="img-fluid d-block mx-auto"
-                    src="assets/img/project/6.jpg"
+                    src="assets/img/project/6.png"
                     alt="..."
                   />
                   <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
+                    BurgerQueen was established this year 2022 nad was a
+                    successful fastfood website gaining over a million followers
+                    for its everyday updates of new combo meals! <br /><br />
+                    Built through purely HTML and CSS
                   </p>
                   <ul class="list-inline">
                     <li>
                       <strong>Client:</strong>
-                      Window
+                      John H. Doe
                     </li>
                     <li>
                       <strong>Category:</strong>
-                      Photography
+                      Website Development
                     </li>
                   </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
+                  <a
+                    href="https://ryandomincel.github.io/BurgerQueen/"
+                    target="_blank"
                   >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
+                    <button
+                      class="btn btn-primary btn-xl text-uppercase"
+                      data-bs-dismiss="modal"
+                      type="button"
+                    >
+                      Preview Project
+                      <i class="fa-solid fa-up-right-and-down-left-from-center">
+                      </i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1217,18 +1313,12 @@
     <!-- MODAL SECTION -->
     <div class="modal fade" tabindex="-1" id="buyModal">
       <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+        <div class="modal-content p-3">
           <form class="needs-validation" novalidate>
             <div class="p-2 mb-2">
-              <input
-                type="button"
-                class="close border-0 float-end"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-                aria-hidden="true"
-              >
-                <span class="fa-solid fa-xmark float-end"></span>
-            </input>
+              <div class="close-modal" data-bs-dismiss="modal">
+                <i class="fa-solid fa-circle-xmark fs-4 float-end"></i>
+              </div>
             </div>
             <div
               class="brand-logo d-flex align-items-center justify-content-center mt-3"
@@ -1246,7 +1336,7 @@
               <h5 class="modal-title mb-3">Enter your billing info</h5>
               <!-- <form class="needs-validation" novalidate> -->
 
-              <!-- STARTING OF ROW -->
+              <!-- STARTING OF 1st ROW -->
               <div class="row">
                 <div class="col-md-6 col-sm-6 mb-3">
                   <!-- MODAL BODY TEXT GOES HERE -->
@@ -1263,6 +1353,7 @@
                     <option value="business">Business</option>
                   </select>
                 </div>
+                <!-- Package Type -->
                 <div class="col-md-6 col-sm-6 mb-3">
                   <label for="validationCustom01">First Name</label>
                   <input
@@ -1276,7 +1367,7 @@
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Required</div>
                 </div>
-                <!-- END OF INPUT -->
+                <!-- First Name -->
 
                 <div class="col-md-6 col-sm-6 mb-3">
                   <label for="validationCustom02">Last Name</label>
@@ -1291,7 +1382,7 @@
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Required</div>
                 </div>
-                <!-- END OF INPUT -->
+                <!-- Last Name -->
 
                 <div class="col-md-6 col-sm-6 mb-3">
                   <label for="validationCustom03">Facebook Name</label>
@@ -1304,7 +1395,7 @@
                   />
                   <div class="invalid-feedback">Required</div>
                 </div>
-                <!-- END OF INPUT -->
+                <!-- Facebook Name -->
 
                 <div class="col-md-6 col-sm-6 mb-3">
                   <label for="validationCustom04">Company</label>
@@ -1317,27 +1408,8 @@
                   />
                   <div class="invalid-feedback">Required</div>
                 </div>
-                <!-- END OF INPUT -->
+                <!-- Company -->
 
-                <div class="col-md-6 col-sm-6 mb-3">
-                  <label for="validationCustom05">Address</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="validationCustom05"
-                    placeholder="Address"
-                    required
-                  />
-                  <div class="invalid-feedback">Required</div>
-                </div>
-                <!-- END OF INPUT -->
-
-                <!-- END OF INPUT -->
-              </div>
-              <!-- END OF ROW -->
-
-              <!-- STARTING OF ROW -->
-              <div class="row">
                 <div class="col-md-6 col-sm-6 mb-3">
                   <label for="validationCustom07">Email Address</label>
                   <input
@@ -1350,7 +1422,78 @@
                   <div class="invalid-feedback">Required</div>
                 </div>
                 <!-- End of email address -->
+              </div>
+              <!-- END OF ROW -->
 
+              <!-- STARTING OF 2nd ROW -->
+              <div class="row">
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="validationCustom05">Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom05"
+                    placeholder="Address"
+                    required
+                  />
+                  <div class="invalid-feedback">Required</div>
+                </div>
+                <!-- Address -->
+
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="selectCountryList">Country</label>
+                  <select class="form-select" id="selectCountryList" required>
+                    <option selected disabled></option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+                <!-- Country-->
+
+                <div class="col-md-6 col-sm-6 mb-3">
+                  <label for="selectStateList">State</label>
+                  <select
+                    class="form-select"
+                    id="selectStateList"
+                    required
+                  ></select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state
+                  </div>
+                </div>
+                <!-- End of State -->
+
+                <div class="col-md-4 col-sm-4 mb-3">
+                  <label for="selectCityList">City</label>
+                  <select
+                    class="form-select"
+                    id="selectCityList"
+                    required
+                  ></select>
+                  <div class="invalid-feedback">Required</div>
+                </div>
+                <!-- End of city -->
+
+                <div class="col-md-2 col-sm-2 mb-3">
+                  <label for="zipcode">Zip</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipcode"
+                    placeholder="Zip"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <!-- End of Zip -->
+              </div>
+              <hr />
+
+              <!--  STARTING OF 3rd ROW-->
+              <div class="row">
                 <div class="col-md-6 mb-3">
                   <label class="mb-2" for="validationRadio08"
                     >Payment Type</label
@@ -1361,7 +1504,6 @@
                       name="flexRadioDefault"
                       type="radio"
                       id="flexRadioDefault"
-                      checked
                     />
                     <label class="form-check-label" for="flexRadioDefault"
                       >Credit Card</label
@@ -1389,20 +1531,9 @@
                       >Debit</label
                     >
                   </div>
+                  <div class="invalid-feedback">Required</div>
                 </div>
                 <!-- End of Input RadioButtons -->
-
-                <div class="col-md-6 col-sm-6 mb-3">
-                  <label for="country">Country</label>
-                  <select class="form-select" id="country" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please select a valid country.
-                  </div>
-                </div>
-                <!-- End of country -->
 
                 <div class="col-md-6 col-sm-6 mb-3">
                   <label for="namecard">Name on Card</label>
@@ -1418,47 +1549,19 @@
                 <!-- End of name card -->
 
                 <div class="col-md-6 col-sm-6 mb-3">
-                  <label for="city">City</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="city"
-                    placeholder="City"
-                    required
-                  />
-                  <div class="invalid-feedback">Required</div>
-                </div>
-                <!-- End of city -->
-
-                <div class="col-md-6 col-sm-6 mb-3">
                   <label for="validationCustom12">Card Number</label>
                   <input
                     type="number"
                     class="form-control"
                     id="validationCustom12"
-                    value="1234 5678 1234 5678"
+                    value=""
                     required
                   />
                   <div class="invalid-feedback">Required</div>
                 </div>
                 <!-- End of credit card number -->
 
-                <div class="col-md-6 col-sm-6 mb-3">
-                  <label for="state">State</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="state"
-                    placeholder="State"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Please provide a valid state
-                  </div>
-                </div>
-                <!-- End of State -->
-
-                <div class="col-md-4 col-sm-4 mb-3">
+                <div class="col-md-3 col-sm-3 mb-3">
                   <label for="cvv">Cvv</label>
                   <input
                     type="password"
@@ -1471,21 +1574,7 @@
                 </div>
                 <!-- End of Cvv -->
 
-                <div class="col-md-3 mb-3">
-                  <label for="zipcode">Zip</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="zipcode"
-                    placeholder="Zip"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
-                </div>
-                <!-- End of Zip -->
-                <div class="col-md-4 offset-md-3 mb-3">
+                <div class="col-md-3 col-sm-3 mb-3">
                   <label for="date">Expiration Date</label>
                   <input
                     type="month"
@@ -1496,46 +1585,46 @@
                   />
                 </div>
                 <!-- End of Expiration Date -->
-
-                <div class="col-lg-12 col-md-12 p-3">
-                  <p>
-                    Auto Renewal Terms: Money-back guarantee applies to web
-                    services privacy. All plans and products automatically renew
-                    unless you cancel. Introductory prices apply to the first
-                    term. The renewal will be for the same term length and at
-                    the regular rates. You may cancel any time, prior to your
-                    renewal to prevent recurring charges, by logging into your
-                    online billing portal or calling customer support at (866)
-                    96-IPR.
-                  </p>
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="invalidCheck"
-                        required
-                      />
-                      <label class="form-check-label" for="invalidCheck">
-                        You have read and agree to IPR's Auto Renewal Terms,
-                        <strong>Terms of Service</strong> and
-                        <strong>Cancellation Policy</strong> and acknowledge
-                        receipt of the <strong>Privacy Notice</strong>.
-                      </label>
-                      <div class="invalid-feedback">
-                        You must agree before submitting.
-                      </div>
+              </div>
+              <div class="col-lg-12 col-md-12 p-3">
+                <p class="small">
+                  Auto Renewal Terms: Money-back guarantee applies to web
+                  services privacy. All plans and products automatically renew
+                  unless you cancel. Introductory prices apply to the first
+                  term. The renewal will be for the same term length and at the
+                  regular rates. You may cancel any time, prior to your renewal
+                  to prevent recurring charges, by logging into your online
+                  billing portal or calling customer support at (866) 96-IPR.
+                </p>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck">
+                      You have read and agree to IPR's Auto Renewal Terms,
+                      <strong>Terms of Service</strong> and
+                      <strong>Cancellation Policy</strong> and acknowledge
+                      receipt of the <strong>Privacy Notice</strong>.
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
                     </div>
                   </div>
                 </div>
-                <!-- End of Agree to terms and conditions -->
               </div>
-              <!-- End of Row-->
+              <!-- End of Agree to terms and conditions -->
             </div>
+            <!-- End of Row-->
 
             <div class="modal-footer">
-              <button type="submit" class="btn btn-warning">Confirm</button>
+              <button type="submit" class="btn btn-warning" id="buttonToModal2">
+                Confirm
+              </button>
               <button class="btn btn-dark" type="reset">Reset</button>
             </div>
           </form>
@@ -1544,49 +1633,126 @@
       </div>
     </div>
 
+    <!-- Modal # 2 for PLans -->
+    <div
+      class="modal fade"
+      id="modal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">
+              Please confirm the details before checking out
+            </h6>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row first">
+                <div class="col-4">
+                  <h6 class="label">Selected Package:</h6>
+                  <p class="text-break package-modal-2">Premium Unleaded</p>
+                </div>
+                <div class="col-4">
+                  <h6 class="label">Full Name:</h6>
+                  <p class="text-break fullname-modal-2">
+                    firstname + " " lastname
+                  </p>
+                </div>
+                <div class="col-4">
+                  <h6 class="label">Facebook Name:</h6>
+                  <p class="text-break fbname-modal-2">Juan DelaCruz</p>
+                </div>
+              </div>
+
+              <div class="row two">
+                <div class="col-4">
+                  <h6 class="label">Address:</h6>
+                  <p class="text-break address-modal-2">Juan Dela Cruz</p>
+                </div>
+                <div class="col-4">
+                  <h6 class="label">Email Address:</h6>
+                  <p class="text-break email-modal-2">
+                    juan.delacurz@hotmail.com
+                  </p>
+                </div>
+                <div class="col-4">
+                  <h6 class="label">Company:</h6>
+                  <p class="text-break company-modal-2">IPR Incorporated</p>
+                </div>
+              </div>
+
+              <div class="row three">
+                <div class="col-4">
+                  <h6 class="label">Country</h6>
+                  <p class="text-break country-modal-2">Philippines</p>
+                </div>
+                <div class="col-4">
+                  <h6 class="label">City:</h6>
+                  <p class="text-break city-modal-2">Manila</p>
+                </div>
+                <div class="col-4">
+                  <h6 class="label">State:</h6>
+                  <p class="text-break state-modal-2">Malanday</p>
+                </div>
+              </div>
+
+              <div class="row four">
+                <div class="col-4">
+                  <h6 class="label">Zip Code</h6>
+                  <p class="text-break zipcode-modal-2">9000</p>
+                </div>
+                <div class="col-4">
+                  <h6 class="label">Payment Type:</h6>
+                  <p class="text-break payment-modal-2">Credit Card</p>
+                </div>
+                <div class="col-4">
+                  <h6 class="label">Name on Card</h6>
+                  <p class="text-break namecard-modal-2">Example name card</p>
+                </div>
+              </div>
+
+              <div class="row six">
+                <div class="col-4">
+                  <h6 class="label">Card Number</h6>
+                  <p class="text-break cardnum-modal-2">**** **** *321</p>
+                </div>
+                <div class="col-4">
+                  <h6 class="label">Cvv</h6>
+                  <p class="cvv-modal-2">****</p>
+                </div>
+                <div class="col-4">
+                  <h6 class="label">Expiration Date</h6>
+                  <p class="text-break expdate-modal-2">March 2190</p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning">OK</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#buyModal"
+            >
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SMTP API -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos script -->
+    <script src="./js/aos.js"></script>
     <!-- script.js -->
     <script src="./js/script.js"></script>
-    <script>
-      function chooseStarter(n) {
-        switch (n) {
-          case "Starter":
-            document.getElementById("packageType").value = "starter";
-            break;
-
-          case "Premium":
-            document.getElementById("packageType").value = "premium";
-
-            break;
-          default:
-            document.getElementById("packageType").value = "business";
-        }
-      }
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function () {
-        window.addEventListener("load", function () {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = this.document.getElementsByClassName("needs-validation");
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function (form) {
-            form.addEventListener("submit", function (event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add("was-validated");
-            });
-          });
-        });
-      })();
-    </script>
-
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- aos script -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
