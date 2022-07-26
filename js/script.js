@@ -53,7 +53,6 @@ function chooseStarter(n) {
           var selectedPackage = document.getElementById("packageType").value;
           var firstName = document.getElementById("validationCustom01").value;
           var lastName = document.getElementById("validationCustom02").value;
-          var fbName = document.getElementById("validationCustom03").value;
           var comapnyName = document.getElementById("validationCustom04").value;
           var emailAdd = document.getElementById("validationCustom07").value;
 
@@ -64,7 +63,7 @@ function chooseStarter(n) {
           var selectedCity = document.getElementById("selectCityList").value;
           var zipCode = document.getElementById("zipcode").value;
 
-          var nameOnCard = document.getElementById("namecard").value;
+          var nameCard = document.getElementById("namecard").value;
           var cardNumber = document.getElementById("validationCustom12").value;
           var cardCvv = document.getElementById("cvv").value;
           var exDate = document.getElementById("date-expiration").value;
@@ -77,7 +76,6 @@ function chooseStarter(n) {
             selectedPackage;
           document.getElementById("fullname-modal-2").innerHTML =
             firstName + " " + lastName;
-          document.getElementById("fbname-modal-2").innerHTML = fbName;
           document.getElementById("company-modal-2").innerHTML = comapnyName;
           document.getElementById("email-modal-2").innerHTML = emailAdd;
           document.getElementById("address-modal-2").innerHTML =
@@ -90,16 +88,65 @@ function chooseStarter(n) {
             selectedCountry +
             " " +
             zipCode;
-          document.getElementById("namecard-modal-2").innerHTML = nameOnCard;
+          document.getElementById("namecard-modal-2").innerHTML = nameCard;
           document.getElementById("cardnum-modal-2").innerHTML = cardNumber;
           document.getElementById("expdate-modal-2").innerHTML = exDate;
           document.getElementById("cvv-modal-2").innerHTML = cardCvv;
+
+          document.getElementById("chosenPackage").innerHTML = selectedPackage;
         }
       });
     });
   });
 })();
+function displayPrice() {
+  var getValue = document.getElementById("packageType");
+  var selectedValue = getValue.options[getValue.selectedIndex].value;
+  console.log(selectedValue);
+  var selectedPrice = document.getElementById("chosenPrice");
+  var pricePerMonth = document.getElementById("pricePerMonth");
+  var taxPrice = document.getElementById("taxPrice");
+  var totalPrice = document.getElementById("totalPrice");
 
+  switch (selectedValue) {
+    case "Starter":
+      var price = 299;
+      var tax = parseFloat(price * 0.1);
+      var taxedPrice = parseFloat(price - tax);
+      var perMonth = 10;
+      var totalP = taxedPrice + tax + perMonth;
+      selectedPrice.innerHTML = "$" + taxedPrice.toFixed(2);
+      pricePerMonth.innerHTML = "$" + perMonth + ".00";
+      taxPrice.innerHTML = "$" + tax.toFixed(2);
+      totalPrice.innerHTML = "$" + totalP + ".00";
+      break;
+    case "Premium":
+      price = 599;
+      tax = parseFloat(price * 0.1);
+      taxedPrice = price - tax;
+      perMonth = 12;
+      totalP = taxedPrice + tax + perMonth;
+      selectedPrice.innerHTML = "$" + taxedPrice.toFixed(2);
+      pricePerMonth.innerHTML = "$" + perMonth + ".00";
+      taxPrice.innerHTML = "$" + tax.toFixed(2);
+      totalPrice.innerHTML = "$" + totalP + ".00";
+
+      break;
+    default:
+      price = 799;
+      tax = parseFloat(price * 0.1);
+      taxedPrice = price - tax;
+      perMonth = 15;
+      totalP = taxedPrice + tax + perMonth;
+      selectedPrice.innerHTML = "$" + taxedPrice.toFixed(2);
+      pricePerMonth.innerHTML = "$" + perMonth + ".00";
+      taxPrice.innerHTML = "$" + tax.toFixed(2);
+      totalPrice.innerHTML = "$" + totalP + ".00";
+  }
+}
+function displayChosenMethod(method) {
+  document.getElementById("payment-modal-2").innerHTML = method;
+}
 function removeDataBs() {
   var buttonToModal2 = document.getElementById("buttoNToModal2");
   buttonToModal2.removeAttribute("data-bs-toggle");
@@ -164,7 +211,7 @@ function sendEmail() {
     Host: "smtp.elasticemail.com",
     Username: "Ivan@IPR.com",
     Password: "3B93D9287490A3783048C266BE1B94B220DF",
-    To: "domincelr@gmail.com",
+    To: "znerfdbernas@gmail.com",
     From: "domincelr@gmail.com",
     Subject: "Newsletter Message",
     Body:
